@@ -22,7 +22,7 @@ class University(Base):
     rating = Column(Numeric(3, 2))
     is_active = Column(Boolean, default=True)
     
-    programs = relationship("Program", back_populates="university")
+    programs = relationship("Programs", back_populates="university")
     
     def __repr__(self):
         return f"<University {self.short_name} ({self.city})>"
