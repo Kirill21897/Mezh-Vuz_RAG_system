@@ -1,3 +1,10 @@
+# For database connection
+sqlalchemy
+psycopg2-binary
+
 # For table ingestion
 docling
 pandas
+
+# Для тестов
+pytest
